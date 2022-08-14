@@ -18,7 +18,6 @@ with open("./2b-datasets/iso-639-3.html") as fp:
 
       print(f"ISO 639-2: {lines[1]}\nISO 639-1: {lines[2]}\nEnglish: {lines[3]}\nFrench: {lines[4]}\nGerman: {lines[5]} \n\n")
 
-
       if len(lines[1]) > 3:
         first = lines[1][slice(0,3)]
         second = lines[1][slice(7,10)]
