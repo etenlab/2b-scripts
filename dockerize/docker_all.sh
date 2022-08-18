@@ -3,22 +3,22 @@
 echo "\n\nremember to run from dev folder\n\n"
 
 # authentication api
-echo "\n2b-authentication-api"
-cd 2b-authentication-api
+echo "\nauthentication-api"
+cd authentication-api
 ./gradlew bootJar
-docker build -t etenlab/2b-authentication-api .
+docker build -t etenlab/authentication-api .
 
 # dataset iso-639-2
-echo "\n\n2b-dataset-api-iso-639-2"
-cd ../2b-dataset-api-iso-639-2
+echo "\n\ndataset-api-iso-639-2"
+cd ../dataset-api-iso-639-2
 ./gradlew bootJar
-docker build -t etenlab/2b-dataset-api-iso-639-2 .
+docker build -t etenlab/iso-639-2-api .
 
 # database api
-echo "\n\n2b-database-api"
-cd ../2b-database-api
+echo "\n\ndatabase-api"
+cd ../database-api
 ./gradlew bootJar
-docker build -t etenlab/2b-database-api .
+docker build -t etenlab/database-api .
 
 cd ..
 
