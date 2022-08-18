@@ -1,2 +1,3 @@
-# 2b-scripts
-Random Scripts, mostly for loading data.
+# scripts
+
+Random scripts, mostly for loading data.
