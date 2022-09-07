@@ -9,7 +9,7 @@ conn = psycopg2.connect(dbname="eil_db_1", user="postgres", password="asdfasdf",
 cur = conn.cursor()
 
 # run from /dev, assumes datasets repo is cloned peer to this repo
-with open("./datasets/iso-639-5.html") as fp:
+with open("./datasets/files/iso-639-5.html") as fp:
     soup = BeautifulSoup(fp, "html.parser")
     rows = soup.find_all("tr")
 

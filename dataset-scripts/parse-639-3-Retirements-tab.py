@@ -7,7 +7,7 @@ cur = conn.cursor()
 
 # run from /dev, assumes datasets repo is cloned peer to this repo
 first = True
-with open("./datasets/iso-639-3_Retirements_20220311.tab") as fp:
+with open("./datasets/files/iso-639-3_Retirements_20220311.tab") as fp:
     for line in fp.readlines():
       if first:
         first = False
