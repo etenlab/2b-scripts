@@ -25,7 +25,7 @@ with open("./datasets/files/2022-08_GSEC_Listing_of_UUPG_100K.csv", newline='') 
         # if csvStart == False and row[0]:
         #     csvStart = True
         #     continue
-        if row:
+        if not all(i is '' for i in row):
             print(f"PEID {row[0]}\n Affinity Bloc {row[1]}\n People Cluster {row[2]}\n Continent {row[3]}\n Sub-Continent {row[4]}\n Country {row[5]}\n Country of Origin {row[6]}\n People Group {row[7]}\n Global Status of  Evangelical Christianity {row[8]}\n ROL {row[9]}\n Language {row[10]}\n Religion {row[11]}\n Nomadic {row[12]}\n Nomadic Type {row[13]}\n Nomadic Description {row[14]}\n Population {row[15]}\n Dispersed (Yes/No) {row[16]}\n Published Scripture {row[17]}\n Jesus Film {row[18]}\n Radio Broadcast {row[19]}\n Gospel Recording {row[20]}\n Audio Scripture {row[21]}\n Gospel Films {row[22]}\n The HOPE {row[23]}\n Resources {row[24]}\n Physical Exertion {row[25]}\n Freedom Index {row[26]}\n Government Restrictions Index {row[27]}\n Social Hostilities Index {row[28]}\n Threat Level {row[29]}\n ROP1 {row[30]}\n ROP2 {row[31]}\n ROP3 {row[32]}\n People Name {row[33]}\n GENC {row[34]}\n FIPS {row[35]}\n FIPS of Origin {row[36]}\n Latitude {row[37]}\n Longitude {row[38]}\n Addition {row[39]}\n Addition Date {row[40]}\n Addition Reasons {row[41]}\n IMB Affinity Group {row[42]}\n Not Engaged Anywhere {row[43]}\n SPI {row[44]}\n Strategic Priority Index {row[45]}\n\n\n")
             # break
 

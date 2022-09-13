@@ -24,7 +24,7 @@ with open("./datasets/files/2022-08_GSEC_Listing_of_Unengaged_Unreached_People_G
         # if csvStart == False and row[0]:
         #     csvStart = True
         #     continue
-        if row:
+        if not all(i is '' for i in row):
             print(f"peid {row[0]}\n affinity_bloc {row[1]}\n people_cluster {row[2]}\n continent {row[3]}\n sub-continent {row[4]}\n country {row[5]}\n country_of_origin {row[6]}\n people_group {row[7]}\n global_status_of_evangelical_christianity {row[8]}\n evangelical_engagement {row[9]}\n population {row[10]}\n dispersed {row[11]}\n rol {row[12]}\n language {row[13]}\n religion {row[14]}\n nomadic {row[15]}\n nomadic_type {row[16]}\n nomadic_description {row[17]}\n published_scripture {row[18]}\n jesus_film {row[19]}\n radio_broadcast {row[20]}\n gospel_recording {row[21]}\n audio_scripture {row[22]}\n gospel_films {row[23]}\n the_hope {row[24]}\n resources {row[25]}\n physical_exertion {row[26]}\n freedom_index {row[27]}\n government_restrictions_index {row[28]}\n social_hostilities_index {row[29]}\n threat_level {row[30]}\n rop1 {row[31]}\n rop2 {row[32]}\n rop3 {row[33]}\n rop_peoplename {row[34]}\n genc {row[35]}\n fips {row[36]}\n fips_of_origin {row[37]}\n latitude {row[38]}\n longitude {row[39]}\n imb_affinity_group {row[40]}\n not_engaged_anywhere {row[41]}\n spi {row[42]}\n strategic_priority_index {row[43]}\n ror {row[44]}\n diaspora {row[45]}\n\n\n")
             # break
 

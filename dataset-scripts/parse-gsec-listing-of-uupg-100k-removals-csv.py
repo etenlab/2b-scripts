@@ -21,7 +21,7 @@ with open("./datasets/files/2022-08_GSEC_Listing_of_UUPG_100K_removals.csv", new
         # if csvStart == False and row[0]:
         #     csvStart = True
         #     continue
-        if row:
+        if not all(i is '' for i in row):
             print(f"PEID {row[0]}\n Affinity Bloc {row[1]}\n People Cluster {row[2]}\n Country {row[3]}\n People Group {row[4]}\n Global Status of Evangelical Christianity {row[5]}\n Language {row[6]}\n Religion {row[7]}\n Population {row[8]}\n Addition Date {row[9]}\n Addition Reasons {row[10]}\n\n\n")
             # break
 

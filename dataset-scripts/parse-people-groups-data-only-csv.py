@@ -20,7 +20,7 @@ with open("./datasets/files/2022-08_People_Groups_data_only.csv", newline='') as
         # if csvStart == False and row[0]:
         #     csvStart = True
         #     continue
-        if row:
+        if not all(i is '' for i in row):
             print(f"PEID {row[0]}\n Affinity Bloc {row[1]}\n People Cluster {row[2]}\n Continent {row[3]}\n Sub-Continent {row[4]}\n Country {row[5]}\n Country of Origin {row[6]}\n People Group {row[7]}\n Global Status of Evangelical Christianity {row[8]}\n Evangelical Engagement {row[9]}\n Population {row[10]}\n Dispersed (Yes/No) {row[11]}\n ROL {row[12]}\n Language {row[13]}\n Religion {row[14]}\n Nomadic {row[15]}\n Nomadic Type {row[16]}\n Nomadic Description {row[17]}\n Written Scripture {row[18]}\n Jesus Film {row[19]}\n Radio Broadcast {row[20]}\n Gospel Recording {row[21]}\n Audio Scripture {row[22]}\n Gospel Films {row[23]}\n The HOPE {row[24]}\n Resources {row[25]}\n Physical Exertion {row[26]}\n Freedom Index {row[27]}\n Government Restrictions Index {row[28]}\n Social Hostilities Index {row[29]}\n Threat Level {row[30]}\n ROP1 {row[31]}\n ROP2 {row[32]}\n ROP3 {row[33]}\n People Name {row[34]}\n GENC {row[35]}\n FIPS {row[36]}\n FIPS of Origin {row[37]}\n Latitude {row[38]}\n Longitude {row[39]}\n IMB Affinity Group {row[40]}\n Not Engaged Anywhere {row[41]}\n SPI {row[42]}\n Strategic Priority Index {row[43]}\n Population Layer {row[44]}\n\n\n")
             # break
 
