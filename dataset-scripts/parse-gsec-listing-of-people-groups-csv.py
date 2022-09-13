@@ -2,9 +2,15 @@
 # pip install psycopg2-binary
 import psycopg2
 import csv
+import eilcommon
 
-conn = psycopg2.connect(dbname="eil_db_1", user="postgres",
-                        password="asdfasdf", host="localhost", port="5432")
+conn = psycopg2.connect(
+    dbname=eilcommon.pg_database, 
+    user=eilcommon.pg_user, 
+    password=eilcommon.pg_password, 
+    host=eilcommon.pg_host, 
+    port=eilcommon.pg_port
+)
 cur = conn.cursor()
 
 first = True
