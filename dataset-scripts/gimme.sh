@@ -29,3 +29,5 @@ python3 scripts/dataset-scripts/parse-people-groups-data-only-csv.py
 python3 scripts/dataset-scripts/parse-rod-alternatenameindex-json.py
 python3 scripts/dataset-scripts/parse-rod-changelist-json.py
 python3 scripts/dataset-scripts/parse-rod-dialects-json.py
+python3 scripts/dataset-scripts/parse-glottolog-org-language-csv.py
+python3 scripts/dataset-scripts/parse-glottolog-org-family-csv.py
