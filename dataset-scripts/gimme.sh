@@ -26,3 +26,6 @@ python3 scripts/dataset-scripts/parse-gsec-listing-of-uupg-100k-additions-csv.py
 python3 scripts/dataset-scripts/parse-gsec-listing-of-uupg-100k-removals-csv.py
 python3 scripts/dataset-scripts/parse-gsec-listing-of-uupg-100k-csv.py
 python3 scripts/dataset-scripts/parse-people-groups-data-only-csv.py
+python3 scripts/dataset-scripts/parse-rod-alternatenameindex-json.py
+python3 scripts/dataset-scripts/parse-rod-changelist-json.py
+python3 scripts/dataset-scripts/parse-rod-dialects-json.py
