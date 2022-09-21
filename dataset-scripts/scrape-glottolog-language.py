@@ -1,16 +1,8 @@
-import requests
-# pip3 install beautifulsoup4
 from bs4 import BeautifulSoup
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
-import pandas as pd
 import time
 import csv
-
-# brew install postgresql
-# pip install psycopg2-binary
-import psycopg2
-import eilcommon
 
 options = Options()
 options.headless = True
